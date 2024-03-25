@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natalie Hoang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">N@</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <section id="home" class="section-odd">
+      <div class="intro">
+        <p class="intro-text1">Hello, I'm</p>
+        <h1>Natalie Hoang</h1>
+        <p class="intro-text2">Student @ EMU.</p>
+        <button class="btn-resume" onclick="window.open('./assets/Natalie-Hoang-Resume.pdf')">Download CV</button> 
+        <!-- <div id="socials-container-top">
+          <img src="./assets/LinkedIn_iconpng.png" alt="LinkedIn profile" class="icon" onclick="location.href= 'https://linkedin.com/in/hoang-natalie'">
+          <img src="./assets/Github-icon.webp" alt="Github profile" class="icon" onclick="location.href='https://https://github.com/hoangnatalie'">
+        </div> -->
+      </div>
+    </section>
+
+    <section id="about" class="section-even">
+      <div class="about-me">
+        <p class="about-me-p">Get to Know More</p>
+        <h1 class="about-header">About Me</h1>
+      </div>
+
+      <div class="summary">
+        <h2>Get to know me</h2>
+        <p>Summary about what you have done</p>
+      </div>
+      <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>Unity</li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section-odd">
+      <h2 class="projects-header">Projects + Fun</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>ReMarket</h3>
+        <p>Description of Project 1.</p>
+        <div class="proj-btns">
+          <div class="two-btns">
+            <a class="learn-btn" href="#">Learn More</a>
+          </div>
+          <div class="two-btns">
+            <a class="github-btn" href="https://github.com/Phi1lS/ReMarket-471-Project" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="assets/TowerOfZeru.png" alt="Project 2">
+        <h3>Tower of Zeru</h3>
+        <p>A roguelite dungeon crawler game.</p>
+        <div class="proj-btns">
+          <div class="two-btns">
+            <a class="learn-btn" href="#">Learn More</a>
+          </div>
+          <div class="two-btns">
+            <a class="github-btn" href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Illustrations</h3>
+        <p>Sometimes I like to be creative using Adobe and Blender.</p>
+        <a class="learn-btn" href="#">Learn More</a>
+      </div>
+      
+      <!-- Repeat similar structure for other projects -->
+    </section>
+
+    <section id="contact" class="section-even">
+        <h1>Get in Touch</h1>
+        <h2>Contact Me</h2>
+        <form action="mailto:" method="POST">
+          <div>
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="name" name="name" placeholder="Name" required>
+          </div>
+          <div>
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div>
+            <!-- <label for="message">Message:</label> -->
+            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+          </div>
+          <button class="send-btn" type="submit">Send</button>
+        </form>
+      </section>
+      
+  </div>
+
+  <footer class="footer">
+    <ul class="social-links">
+      <a href="https://github.com/hoangnatalie" target="_blank"> <img class="footer-icon" src="assets/github_icon2.png" alt="Github Icon"></a>
+      <a href="https://www.linkedin.com/in/hoang-natalie" target="_blank"> <img class="footer-icon" src="assets/linkedin_icon.png" alt="Linkedin Icon"></a>
+      <a href="https://www.instagram.com/_nataliehoang/" target="_blank"> <img class="footer-icon" src="assets/instagram_icon.png" alt="Instagram Icon"></a> 
+      <!-- Add more social links/icons as needed -->
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+@font-face {
+    font-family: Mont;
+    src: url(assets/Mont-HeavyDEMO.otf);
+    /* font-family: Bold;
+    src: url(assets/THE\ BOLD\ FONT\ -\ FREE\ VERSION\ -\ 2023.otf); */
+}
+@font-face {
+    font-family: MontLight;
+    src: url(assets/Mont-ExtraLightDEMO.otf);
+    /* font-family: Bold;
+    src: url(assets/THE\ BOLD\ FONT\ -\ FREE\ VERSION\ -\ 2023.otf); */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Mont;
+}
+
+/* Alternate background colors for sections */
+.section-odd {
+    background-color: #f4f4f4; 
+}
+.section-even {
+    background-color: #fff; 
+}
+
+/* Styles for navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #32a690;
+    color: #fff; 
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff; 
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links li:last-child {
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4fd8bf; 
+    text-decoration: underline;
+    text-decoration-color: #d95988;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 10px;
+}
+
+/* Styles for home Section */
+.intro {
+    height: 75vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #ecf0f1;
+    text-align: center;
+    padding-top: 100px; 
+}
+
+.intro h1 {
+    font-size: 4rem; 
+    color: #f7b740; 
+    margin: 0;
+    line-height: 1.2; 
+}
+
+.intro-text1 {
+    font-size: 1.3rem; 
+    color: #555; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.intro-text2 {
+    font-size: 1.8rem; 
+    color: #555; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* #socials-container-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.icon {
+    height: 2rem;
+    position: absolute;   
+} */
+
+.btn-resume {
+    display: inline-block;
+    padding: 1rem; 
+    width: 9rem;
+    background-color: #d95988;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-family: Mont;
+    border-radius: 2rem; 
+    margin-top: 10px;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease;
+}
+
+.btn-resume:hover {
+    background-color: #c54b78;
+    cursor: pointer;
+}
+
+
+
+/* Styles for about section */
+/* #about {
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+} */
+
+/* h2 {
+    color: #f7b740;
+} */
+
+.about-me-p {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    color:#666;
+}
+
+.about-header {
+    margin-top: 0px;
+    font-size: 2.5rem;
+    color: #32a690;
+}
+
+.section-header {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+/* Styles for about section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; /* Center vertically */
+}
+
+.summary,
+.skills {
+    width: 40%;
+    margin: 10px  auto 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to left within containers */
+}
+
+
+.summary h3,
+.skills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.summary p,
+.skills ul {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.skills ul li:before {
+    content: "";
+    margin-right: 5px;
+    color: #007bff;
+}
+
+/* Styles for projects section */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project {
+    width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projects-header {
+    font-size: 2.5rem;
+    color: #32a690;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+.project img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #f7b740; 
+}
+
+.project p {
+    margin-top: 10px;
+    color: #666; 
+}
+
+.learn-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #d95988;
+    border-style: solid;
+    border-color: #d95988;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-btn:hover {
+    background-color: #d95988;
+    color: #fff;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d95988;
+    color: #fff;
+    border-style: solid;
+    border-color: #d95988;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.2s ease;
+}
+
+.footer-icon:hover, 
+.github-btn:hover {
+    opacity: 0.75;
+}
+
+
+
+.proj-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.two-btns {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* Styles for contact section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    color: #666;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #32a690; /* #333 Dark gray text color */
+}
+
+#contact form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#contact form div {
+    margin-bottom: 20px;
+}
+
+#contact form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray text color */
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    font-family: MontLight;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #b8a487; /* Light gray border */
+    border-radius: 5px;
+    /* border-bottom: 2px solid #7f6244; */
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+#contact form input[type="text"]:focus,
+#contact form input[type="email"]:focus,
+#contact form textarea:focus {
+    border: 2px solid #937a62;
+    /* border-color: transparent;
+    border-bottom: 2px solid #7f6244; */
+    /* border-color: #3498db;  Light blue border color on focus */
+}
+
+#contact form textarea {
+    height: 150px; /* Adjust as needed */
+}
+
+.send-btn {
+    font-family: MontLight;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #d95988;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.send-btn:hover {
+    background-color: #c54b78;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #32a690; /* Slightly darker blue background */
+    color: #fff; /* White text color */
+    padding: 30px 20px; /* Increased padding for better spacing */
+    text-align: center; /* Center align text */
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center align social links horizontally */
+    margin-top: 20px; /* Added margin top for better spacing */
+    padding: 0;
+}
+
+.footer-icon {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+

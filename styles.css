@@ -1,12 +1,12 @@
 @font-face {
     font-family: Mont;
-    src: url(assets/Mont-HeavyDEMO.otf);
+    src: url(assets/fonts/Mont-HeavyDEMO.otf);
     /* font-family: Bold;
     src: url(assets/THE\ BOLD\ FONT\ -\ FREE\ VERSION\ -\ 2023.otf); */
 }
 @font-face {
     font-family: MontLight;
-    src: url(assets/Mont-ExtraLightDEMO.otf);
+    src: url(assets/fonts/Mont-ExtraLightDEMO.otf);
     /* font-family: Bold;
     src: url(assets/THE\ BOLD\ FONT\ -\ FREE\ VERSION\ -\ 2023.otf); */
 }
@@ -15,6 +15,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: Mont;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    overflow: visible;
 }
 
 /* Alternate background colors for sections */
@@ -33,18 +39,21 @@ nav {
     padding: 20px;
     background-color: #32a690;
     color: #fff; 
+    position: sticky;
+    top: 0;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff; 
-    cursor: pointer;
+    cursor: default;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     margin-right: 10px;
+    align-items: center;
 }
 
 .nav-links li {
@@ -63,11 +72,96 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #4fd8bf; 
-    text-decoration: underline;
+    color: #CACBD5; 
+    /* text-decoration: underline; */
     text-decoration-color: #d95988;
     text-decoration-thickness: 2.5px;
     text-underline-offset: 10px;
+}
+
+/* Styles for mobile nav */
+#mobile-nav {
+    display: none;
+}
+
+.mobile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.mobile-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.mobile-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    top: calc(100% + 30px);
+    background-color: #ecf0f1;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, transform 0.3s ease;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Mont;
+    color: #32a690;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.menu-links li a:active {
+    background-color: white;
+}
+
+.mobile-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.mobile-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.mobile-icon span:first-child {
+    transform: none;
+}
+
+.mobile-icon span:first-child {
+    opacity: 1;
+}
+
+.mobile-icon span:first-child {
+    transform: none;
 }
 
 /* Styles for home Section */
@@ -78,7 +172,6 @@ nav {
     justify-content: center; 
     align-items: center;
     background-color: #ecf0f1;
-    text-align: center;
     padding-top: 100px; 
 }
 
@@ -87,6 +180,7 @@ nav {
     color: #f7b740; 
     margin: 0;
     line-height: 1.2; 
+    text-align: center;
 }
 
 .intro-text1 {
@@ -102,19 +196,6 @@ nav {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-/* #socials-container-top {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-    overflow: hidden;
-}
-
-.icon {
-    height: 2rem;
-    position: absolute;   
-} */
 
 .btn-resume {
     display: inline-block;
@@ -136,19 +217,7 @@ nav {
     cursor: pointer;
 }
 
-
-
 /* Styles for about section */
-/* #about {
-    padding: 50px 20px;
-    text-align: center;
-    color: #333;
-} */
-
-/* h2 {
-    color: #f7b740;
-} */
-
 .about-me-p {
     font-size: 1rem;
     margin-bottom: 0px;
@@ -173,13 +242,6 @@ nav {
     color: #333;
 }
 
-.about-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center; /* Center vertically */
-}
-
 .summary,
 .skills {
     width: 40%;
@@ -187,9 +249,8 @@ nav {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Align text to left within containers */
+    text-align: left; 
 }
-
 
 .summary h3,
 .skills h3 {
@@ -197,11 +258,20 @@ nav {
     margin-bottom: 20px;
 }
 
+.summary p, .project p {
+    font-family: MontLight;
+    font-weight: bolder;
+}
+
 .summary p,
 .skills ul {
+    line-height: 1.6;
+}
+
+.summary p,
+.skills ul, .project p {
     font-size: 1.2rem;
     color: #666;
-    line-height: 1.6;
 }
 
 .skills ul {
@@ -250,7 +320,7 @@ nav {
     transform: translateY(-5px);
 }
 .project img {
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
@@ -262,8 +332,7 @@ nav {
 }
 
 .project p {
-    margin-top: 10px;
-    color: #666; 
+    margin-top: 10px; 
 }
 
 .learn-btn {
@@ -331,11 +400,11 @@ nav {
     font-size: 2.5rem;
     margin-top: 0px;
     margin-bottom: 30px;
-    color: #32a690; /* #333 Dark gray text color */
+    color: #32a690; 
 }
 
 #contact form {
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
@@ -347,19 +416,19 @@ nav {
     display: block;
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: #333; /* Dark gray text color */
+    color: #333; 
 }
 
 #contact form input[type="text"],
 #contact form input[type="email"],
 #contact form textarea {
+    box-sizing: border-box;
     font-family: MontLight;
     font-weight: bold;
     width: 100%;
     padding: 10px;
     border: 2px solid #b8a487; /* Light gray border */
     border-radius: 5px;
-    /* border-bottom: 2px solid #7f6244; */
     transition: border-color 0.3s ease;
     outline: none;
 }
@@ -368,9 +437,6 @@ nav {
 #contact form input[type="email"]:focus,
 #contact form textarea:focus {
     border: 2px solid #937a62;
-    /* border-color: transparent;
-    border-bottom: 2px solid #7f6244; */
-    /* border-color: #3498db;  Light blue border color on focus */
 }
 
 #contact form textarea {
@@ -396,7 +462,7 @@ nav {
 
 /* Styles for footer */
 footer {
-    background-color: #32a690; /* Slightly darker blue background */
+    background-color: #32a690; 
     color: #fff; /* White text color */
     padding: 30px 20px; /* Increased padding for better spacing */
     text-align: center; /* Center align text */

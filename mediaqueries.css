@@ -1,0 +1,62 @@
+/* If the screen size is 1400px wide or less */
+@media screen and (max-width: 1400px) {
+  #home {
+    height: 83vh;
+    margin-bottom: 6 rem;
+  }
+
+  #about {
+    flex-wrap: wrap;
+  }  
+}
+
+/* If the screen size is 1200px wide or less */
+@media screen and (max-width: 1200px) {
+  #navbar {
+    display: none;
+  }
+  #mobile-nav {
+    display: flex;
+  }
+
+  .summary, .skills, .project {
+    margin-top: 2rem;
+    width: auto;
+  }
+
+  #about {
+    height: fit-content;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #contact, footer {
+    /* height: -5vh; */
+    height: fit-content;
+  }
+
+  .menu-links a {
+    font-size: 1.25rem;
+  }
+
+  .logo, .intro-text2 {
+    font-size: 1.5rem;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .summary p, .skills ul, .project p {
+    font-size: 1rem;
+  }
+
+  .project h3 {
+    font-size: 1.75rem;
+  }
+
+  .footer-icon {
+    width: 50px;
+  }
+}

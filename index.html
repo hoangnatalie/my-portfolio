@@ -54,7 +54,7 @@
 
     <section id="about" class="section-even">
       <div class="about-me">
-        <p class="about-me-p">Get to Know More</p>
+        <!-- <p class="about-me-p">Get to Know More</p> -->
         <h1 class="about-header">About Me</h1>
       </div>
 
@@ -133,18 +133,19 @@
     <section id="contact" class="section-even">
         <h1>Get in Touch</h1>
         <h2>Contact Me</h2>
-        <form action="mailto:" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
           <div>
+            <input type="hidden" name="access_key" value="129933d1-fdb7-40c5-a85a-e9a05d40c093">
             <!-- <label for="name">Name:</label> -->
-            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="text" id="name" name="name" placeholder="Name" class="contact-inputs" required>
           </div>
           <div>
             <!-- <label for="email">Email:</label> -->
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="email" id="email" name="email" placeholder="Email" class="contact-inputs" required>
           </div>
           <div>
             <!-- <label for="message">Message:</label> -->
-            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Message" class="contact-inputs" required></textarea>
           </div>
           <button class="send-btn" type="submit">Send</button>
         </form>

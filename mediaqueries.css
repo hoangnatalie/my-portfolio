@@ -56,6 +56,10 @@
     font-size: 1.75rem;
   }
 
+  #contact form {
+    width: 90%;
+  }
+
   .footer-icon {
     width: 50px;
   }

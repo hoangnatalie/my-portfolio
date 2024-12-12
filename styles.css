@@ -11,6 +11,12 @@
     src: url(assets/THE\ BOLD\ FONT\ -\ FREE\ VERSION\ -\ 2023.otf); */
 }
 
+:root {
+    --primary: #00A4B2;
+    --secondary: #037F8C;
+    --accent: #037F8C;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -37,7 +43,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #32a690;
+    background-color: var(--accent);
     color: #fff; 
     position: sticky;
     top: 0;
@@ -178,7 +184,7 @@ nav {
 
 .intro h1 {
     font-size: 4rem; 
-    color: #f7b740; 
+    color: var(--primary); 
     margin: 0;
     line-height: 1.2; 
     text-align: center;
@@ -202,7 +208,7 @@ nav {
     display: inline-block;
     padding: 1rem; 
     width: 9rem;
-    background-color: #d95988;
+    background-color: var(--secondary);
     color: #fff;
     text-decoration: none;
     border: none;
@@ -228,7 +234,7 @@ nav {
 .about-header {
     margin-top: 0px;
     font-size: 2.5rem;
-    color: #32a690;
+    color: var(--primary);
 }
 
 .section-header {
@@ -314,7 +320,7 @@ nav {
 
 .projects-header {
     font-size: 2.5rem;
-    color: #32a690;
+    color: var(--primary);
 }
 
 .project:hover {
@@ -329,7 +335,7 @@ nav {
 .project h3 {
     margin-top: 20px;
     font-size: 1.5rem;
-    color: #f7b740; 
+    color: var(--primary); 
 }
 
 .project p {
@@ -340,9 +346,9 @@ nav {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
-    color: #d95988;
+    color: var(--secondary);
     border-style: solid;
-    border-color: #d95988;
+    border-color: var(--secondary);
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -350,17 +356,17 @@ nav {
 }
 
 .learn-btn:hover {
-    background-color: #d95988;
+    background-color: var(--secondary);
     color: #fff;
 }
 
 .github-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #d95988;
+    background-color: var(--secondary);
     color: #fff;
     border-style: solid;
-    border-color: #d95988;
+    border-color: var(--secondary);
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -401,7 +407,7 @@ nav {
     font-size: 2.5rem;
     margin-top: 0px;
     margin-bottom: 30px;
-    color: #32a690; 
+    color: var(--primary); 
 }
 
 #contact form {
@@ -448,7 +454,7 @@ nav {
     font-family: MontLight;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #d95988;
+    background-color: var(--secondary);
     color: white;
     border: none;
     border-radius: 5px;
@@ -458,12 +464,12 @@ nav {
 }
 
 .send-btn:hover {
-    background-color: #c54b78;
+    background-color: #046772;
 }
 
 /* Styles for footer */
 footer {
-    background-color: #32a690; 
+    background-color: var(--primary); 
     color: #fff; /* White text color */
     padding: 30px 20px; /* Increased padding for better spacing */
     text-align: center; /* Center align text */

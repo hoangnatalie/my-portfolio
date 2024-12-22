@@ -1,0 +1,320 @@
+/* Color */
+:root {
+  --primary: #F5EDDF;
+  --secondary: #786658;
+  --accent: #9CBC90;
+  --primary-dk: #E2DDCB;
+  --accent-lt: #BED8B5;
+}
+
+span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Header Section */
+header {
+  /* background-color: lightgray; */
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
+
+.header-container, .overview-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.header-container ul {
+  display: flex;
+  list-style: none;
+  
+  padding: 0;
+}
+
+.header-container h1, .header-desc, h4 {
+  margin-bottom: 10px;
+}
+
+.header-container p {
+  margin-top: 0;
+}
+
+.header-nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-desc {
+  font-size: 1.15rem;
+}
+
+.project-nav {
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.project-nav a {
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.project-nav a:hover {
+  text-decoration: underline;
+  color: var(--accent-lt);
+}
+
+.stack-list {
+  gap: 0.5rem; /* Add spacing between items */
+  margin: 0; 
+  flex-wrap: wrap;
+}
+
+.stack-list li {
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  background-color: var(--primary-dk); /* Optional: Add background for distinction */
+  border-radius: 20px; /* Optional: Rounded corners for items */
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  background-color: var(--secondary);
+  height: 3px;
+  border-radius: 25px;
+}
+
+/* Overview Section */
+
+.overview-text-containter {
+  width: 50%;
+}
+
+#overview p {
+  font-size: 1.75rem;
+}
+
+#overview img {
+  width: 250px;
+}
+
+/* Design Section */
+.design-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.design-container img {
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+}
+
+.design-sketches, .design-sketches2 {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: pink; */
+}
+
+.design-sketches img {
+  width: 45%;
+  /* border-radius: 10px; */
+}
+
+.sketch-desc-container h2 {
+  margin-top: 10px;
+}
+
+.design-container h3, .testing-container h3 {
+  font-size: 1.75rem;
+}
+
+.design-container h3 {
+  margin-top: 30px;
+}
+
+.design-container p {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.wireframe-desc-container {
+  display: flex;
+}
+
+figcaption {
+  font-size: 1.3rem;
+}
+
+/* Testing Section */
+.testing-container {
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: lightgray; */
+}
+
+.testing-container h3 {
+  margin-bottom: 15px;
+}
+
+.testing-container h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.testing-container ul {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.testing-container p, .testing-container ul li {
+  font-size: 1.5rem;
+}
+
+.testing-container figcaption {
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 10px;
+}
+
+.desc {
+  margin-top: 0;
+}
+
+.persona-card {
+  background-color: var(--primary-dk);
+  display: flex;
+  border-radius: 10px;
+  padding: 15px;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.persona-card p {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.persona-content {
+  width: 66%;
+}
+
+.persona-points {
+  display: flex;
+  margin-top: 10px;
+}
+
+.persona-card img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.testing-results {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results-text {
+  width: 40%;
+}
+
+.testing-images {
+  display: flex;
+}
+
+.testing-images img {
+  width: 300px;
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+}
+
+/* Reflection Section */
+.reflection-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.reflection-container img {
+  border-radius: 10px;
+  width: 50%;
+  border: 2px solid var(--secondary);
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+}
+
+.reflection-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recap {
+  width: 100%;
+}
+
+.reflection-container p, .reflection-container ul {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: var(--accent);
+  border: 0;
+  border-radius: 7px;
+  padding: 12px;
+  color: #fff;
+  font-size: large;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent-lt);
+}
+
+/* Before Footer */
+/* .links-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.links-container a {
+  color: var(--secondary);
+  text-decoration: none
+} */
+
+/* Footer Section */
+footer a {
+  color: var(--secondary);
+  margin-right: 10px;
+}
+
+footer a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}

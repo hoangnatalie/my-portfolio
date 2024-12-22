@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natalie Hoang</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/ript-styles.css">
+  <link rel="stylesheet" href="/styles/mediaqueries.css">
+  <link rel="stylesheet" href="/styles/mediaqueries_ript.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav">
+    <div class="nav-logo">N@</div>
+    <a class="nav-hamburger">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </a>
+    <div class="nav-menu">
+      <ul>
+        <li class="nav-menu-link"><a href="index.html#home">Home</a></li>
+        <li class="nav-menu-link"><a href="index.html#projects">Projects</a></li>
+        <li class="nav-menu-link"><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Header Section -->
+  <header id="top">
+    <div class="header-container">
+      <div class="header-nav-container">
+        <div class="header-info">
+          <h1>Ript Fitness App</h1>
+          <p class="header-desc">An app that encourages all gym goers on their fitness journey.</p>
+        </div>
+        <div>
+          <ul class="project-nav">
+            <li class="project-nav-link"><a href="#overview">Overview</a></li>
+            <li class="project-nav-link"><a href="#design">Design</a></li>
+            <li class="project-nav-link"><a href="#testing">Testing</a></li>
+            <li class="project-nav-link"><a href="#reflection">Reflection</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4>Tech Stack</h4>
+          <ul class="stack-list">
+            <li>React Native</li>
+            <li>TypeScript</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>SQL</li>
+            <li>Azure</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul class="stack-list">
+            <li>Adobe Illustrator</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </header>
+  <!-- Overview Section -->
+   <section id="overview">
+    <div class="overview-container">
+      <div class="overview-text-containter">
+        <div>
+          <h2>Overview</h2>
+          <p>Keeping track of workouts with a notepad and pen is outdated, and paying for apps can be frustrating. <span>Our goal is to create a free app that eliminates paywalls and helps users stay motivated by connecting with friends and family.</span></p>
+        </div>
+        <div>
+          <h3>Problem</h3>
+          <p>Many apps that offer a way to log workouts and track food intake require in-app purchases. Most people are turned away from that and rely on physical pen and paper or use multiple apps to solve this problem.</p>
+        </div>
+      </div>
+      <div>
+        <img src="assets\images\ript-welcome-portrait.png" alt="Ript Welcome">
+      </div>
+    </div>
+    <hr>
+   </section>
+   <!-- Design Section -->
+   <section id="design">
+    <div class="design-container">
+      <h2>Design</h2>
+      <div class="design-sketches">
+        <img src="assets\images\ript-sketches-1.jpg" alt="sketch1">
+        <img src="assets\images\ript-sketches-2.jpg" alt="sketch2">
+      </div>
+      <div class="sketch-desc-container">
+        <div>
+          <h3>Sketching</h3>
+          <p>Before we started developing, we sketched an outline of each screen and their functions. For example, we had screens for Ript workouts, add workout, and start workout.</p>
+        </div>
+      </div>
+      <div class="design-sketches2">
+        <img src="assets\images\wireframe.png" alt="wireframes">
+        <figure>
+          <img src="assets\images\add-workout_empty.png" alt="add-workout-empty">
+          <figcaption>When adding exercises for a workout, this is what the screen looked like when empty. <span><strong>Spoilers:</strong> users were not fans!</span></figcaption>
+        </figure>
+      </div>
+      <div>
+        <h3>Wireframing</h3>
+        <p>Taking what we sketched, we created wireframes to visualize our screens.</p>
+      </div>
+    </div>
+    <hr>
+   </section>
+   <!-- Testing Section -->
+    <section id="testing">
+      <div class="testing-container">
+        <h2>Testing</h2>
+        <h3 class="subtitle">User Persona</h3>
+        <p class="desc">A brief introduction to one of our beta testers.</p>
+        <div class="persona-card">
+          <img src="assets\images\ript-persona.jpg" alt="ript-persona">
+          <div class="persona-content">
+            <h3>Misho the Gym Bro</h3>
+            <div>
+              <h4>About</h4>
+              <p>Misho started his fitness journey at the beginning of his college career. Since then, he has stuck to a strict gym schedule and rarely misses a day. With this routine, Misho ensures that he eats healthy and protein-packed meals. </p>
+            </div>
+            <div class="persona-points">
+              <div>
+                <h4>Needs</h4>
+                <ul>
+                  <li>An app to store his workouts.</li>
+                </ul>
+                <h4>Goals</h4>
+                <ul>
+                  <li>Be more organized and ditch the memory strategy.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Pain Points</h4>
+                <ul>
+                  <li>Frustrated by the many apps that require payment to use their full app.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>Addressing user confusion - Add Workout</h3>
+        <div class="testing-results">
+          <div class="results-text">
+            <p><span>During testing, 90% of beta testers did not understand the Add Workout screen.</span> The search bar caused confusion, since our app didn’t have functionality for a search feature on this page. Beta testers overlooked the plus icon which has a modal appear to add an exercise. In response, we implemented the following changes:</p>
+            <ul>
+              <li>Replaced the search bar with input for the workout name.</li>
+              <li>Added a note for users when there are no exercises created.</li>
+              <li>Changed button title to be more specific and disabled it unless an exercise has been added.</li>
+            </ul>
+          </div>
+          <div class="testing-images">
+            <figure>
+              <figcaption>Before</figcaption>
+              <img src="assets\images\Add-Workout-Empty.png" alt="empty-add-workout">
+            </figure>
+            <figure>
+              <figcaption>After</figcaption>
+              <img src="assets\images\new-add-workout.png" alt="new-add-workout">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+   <!-- Reclection Section -->
+    <section id="reflection">
+      <div class="reflection-container">
+        <h2>Reflection</h2>
+        <div class="test">
+          <img src="assets\images\ript-team.png" alt="ript-team">
+        </div>
+        <div class="reflection-content">
+          <div class="recap">
+            <h3>Recap</h3>
+            <p>In one semester,</p>
+            <ul>
+              <li>We had <span>21 team meetings.</span></li>
+              <li>We completed <span>20 features.</span></li>
+              <li>We interviewed <span>10 beta testers.</span></li>
+            </ul>
+            <p>More specifically,</p>
+            <ul>
+              <li>I completed <span>5 features.</span></li>
+              <li>I documented <span>21 meeting docs.</span></li>
+            </ul>
+            <p>I am very proud of our app. It required a lot of time and effort, but it was <span>100% worth it.</span></p>
+          </div>
+          <div class="next-steps-container">
+            <div class="next-steps">
+              <h3>Next Steps</h3>
+              <p><span>Out of 6 team projects,</span> Ript Fitness was chosen for future EMU COSC 481 students to continue work on and develop new features.</p>
+            </div>
+            <div>
+              <h3>Demo</h3>
+              <p>Download <span>Expo Go</span> from the app store to demo Ript Fitness! Once downloaded, use the button below.</p>
+              <button onclick="window.open('exp://u.expo.dev/ea20e0cb-de85-4497-8c69-2a529bb4a3a4/group/15ab57b4-690a-43cc-9529-729a1e999870', '_blank')">View Live</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- Before Footer -->
+     <!-- <div class="links-container">
+      <a href="mailto:hoangtnatalie@gmail.com">hoangtnatalie@gmail.com</a>
+      <a href="#top">Back to Top</a>
+     </div> -->
+  <!-- Footer Section -->
+  <footer>
+    <ul>
+      <a href="mailto:hoangtnatalie@gmail.com" target="_blank" class="footer-link">Email</a>
+      <a href="https://github.com/hoangnatalie" target="_blank" class="footer-link">Github</a>
+      <a href="https://www.linkedin.com/in/hoang-natalie" target="_blank" class="footer-link">LinkedIn</a>
+    </ul>
+  </footer>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

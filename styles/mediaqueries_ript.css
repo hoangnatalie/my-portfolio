@@ -1,0 +1,161 @@
+@media screen and (max-width: 1400px) {
+  /* .persona-card {
+    align-items: center;
+  } */
+  .persona-card img  {
+    height: 300px; 
+  }
+
+  .persona-card h3 {
+    margin-top: 0;
+  }
+
+  .recap {
+    margin-right: 30px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .design-sketches2 {
+    flex-direction: column;
+  }
+
+  .design-sketches2 figure {
+    margin-left: 0;
+  }
+
+  .design-sketches2 figure figcaption {
+    width: 50%;
+  }
+
+  .testing-results {
+    flex-direction: column;
+  }
+
+  .results-text {
+    width: 100%;
+  }
+
+  .testing-images {
+    margin: 0 auto;
+  }
+
+  .recap {
+    margin-right: 20px;
+  }
+
+  /* 
+  .next-steps-container {
+    width: 100%;
+  } */
+}
+
+
+@media screen and (max-width: 550px) {
+  section {
+    padding: 0;
+  }
+  /* Shared */
+  figcaption {
+    font-size: 1rem;
+  }
+
+  .design-container h3, .testing-container h3, .reflection-container h3 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* header */
+  h1 {
+    font-size: 2rem;
+  }
+
+  .project-nav-link {
+    /* font-size: 3rem; */
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+
+  /* Overview */
+  .overview-container {
+    flex-direction: column;
+  }
+
+  #overview p, .design-container p, .testing-container p, .testing-container h4, .testing-container ul li, .reflection-container p, .reflection-container ul li {
+    font-size: 1.2rem;
+  }
+
+  .testing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center
+  }
+
+  /* Design */
+  .design-container img {
+    /* width: 300px; */
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .design-sketches, .design-sketches2 {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .design-sketches2 figure {
+    margin: 0 auto;
+  }
+
+  .design-sketches2 figure figcaption {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Testing */
+  .persona-card, .persona-points, .reflection-content {
+    flex-direction: column;
+  }
+
+  .persona-card h3 {
+    margin-top: 10px;
+  }
+
+  .overview-text-containter, .persona-card img, .persona-content, .testing-results, .results-text, .testing-images img, #overview img {
+    width: 100%;
+  }
+
+  .testing-results, .testing-images {
+    flex-direction: column;
+  }
+
+  .testing-images {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  /* Reflection */
+  .reflection-container img {
+    width: 100%;
+  }
+
+  .reflection-container ul {
+    line-height: 30px;
+  }
+
+  .recap {
+    margin-right: 0;
+  }
+
+  button {
+    font-size: medium;
+   }
+
+}

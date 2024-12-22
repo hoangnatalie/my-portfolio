@@ -1,0 +1,457 @@
+/* Font */
+@font-face {
+  font-family: 'Louis-George-Cafe';
+  src: url(../assets/fonts/Louis-George-Cafe.ttf);
+}
+
+/* Color */
+:root {
+  --primary: #F5EDDF;
+  --secondary: #786658;
+  --accent: #9CBC90;
+  --primary-dk: #E2DDCB;
+  --accent-lt: #BED8B5;
+}
+
+/* Repeating styles */
+.nav-menu ul li a, .nav-menu li a, .nav-menu li a:focus {
+  text-decoration: none;
+}
+
+body, button, input[type="submit"] {
+  font-family: 'Louis-George-Cafe';
+}
+
+body {
+  color: var(--secondary);
+  background-color: var(--primary);
+}
+
+/* Styles for navbar */
+.nav {
+  /* For sticky nav */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 1000; */
+  /* z-index: 1; */
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+  /* styling */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 20px;
+  background-color: var(--accent);
+}
+
+.nav.hidden {
+  transform: translateY(calc(-100% - 10px));
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: auto 1rem;
+  color: var(--secondary);
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu ul li {
+  list-style: none;
+}
+
+.nav-menu ul li a {
+  color: var(--secondary);
+  padding: 1rem;
+  display: block;
+  font-size: 1.25rem;
+}
+
+.nav-menu li a {
+  color: var(--accent-lt);
+}
+
+.nav-menu li a:hover:not(:focus) {
+  cursor: pointer;
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+}
+
+.nav-menu li a:focus {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.nav-hamburger {
+  width: 1.875rem;
+  height: 1.313rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 1.25rem;
+  right: 2.5rem;
+}
+
+.hamburger-line {
+  height: 0.188rem;
+  width: 100%;
+  background-color: var(--secondary);
+  border-radius: 0.625rem;
+  transition: all ease-in-out 0.2s;
+}
+
+section {
+  padding: 25px;
+}
+
+/* Home section */
+#home {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: gray; */
+  padding-top: 20px;
+  /* width: 80%; */
+  /* margin-left: 165px; */
+  /* padding-bottom: 100px; */
+}
+
+.intro {
+  height: 100vh; 
+  width: 30%;
+  align-content: center;
+  /* background-color: #383838; */
+}
+
+.intro h1 {
+  font-size: 5rem; 
+  color: var(--accent); 
+  /* line-height: 1;  */
+  margin: 0;
+}
+
+.intro-text1 {
+  font-size: 2.5rem; 
+  margin: 0;
+}
+
+.intro-text2 {
+  font-size: 1.5rem; 
+}
+
+.intro button, input[type="submit"] {
+  background-color: var(--accent);
+  border: 0;
+  border-radius: 7px;
+  padding: 12px;
+  color: #fff;
+  font-size: medium;
+}
+
+.intro button:hover {
+  cursor: pointer;
+  background-color: var(--accent-lt);
+}
+
+#home img {
+  width: 25%;
+  height: 25%;
+  border-radius: 10px;
+  align-self: center;
+  border: 5px solid var(--secondary);
+}
+
+/* Projects section */
+h2 {
+  font-size: 3rem;
+}
+
+#projects, #contact {
+  /* align-content: center; */
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  align-self: center;
+  /* background-color: pink; */
+  width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+
+.card {
+  padding: 20px;
+  display: flex;
+  /* flex-direction: column;  */
+  align-items: center; /* Centers items horizontally */
+
+
+  /* padding-left: 10px; */
+  /* margin-left: 30px; */
+  /* box-shadow: 0 4px 8px 0 rgb(54 50 164 / 20%); */
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  background-color: var(--primary-dk);
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  /* align-items: center; */
+}
+
+.card-header {
+  width: 55%;
+  height: 100%; 
+  /* background-color: red; */
+  overflow: hidden;
+
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%; 
+  border-radius: 10px;
+  align-self: center;
+
+}
+
+#project-cards {
+  /* background-color: blue; */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  /* text-align: center; */
+  /* background-color: blue; */
+  width: 100%;
+  height: 100%;
+}
+
+.card-body ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.card-body ul li {
+  margin-right: 10px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 10px;
+  min-width: 30px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card-body p {
+  margin-bottom: 5px;
+}
+
+.read-more a {
+  color: var(--accent); /* Use your secondary color */
+  text-decoration: none;
+}
+
+.read-more a:hover {
+  color: var(--accent-lt);
+  text-decoration: underline;
+}
+
+
+.btn-container {
+  display: flex;
+  gap: 12px; /* Space between buttons */
+  justify-content: flex-start; /* Center buttons horizontally within the container */
+  margin-top: 15px;
+}
+
+.btn-container button {
+  display: flex;
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  background-color: var(--accent);
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  /* width: 40px;
+  height: 40px; */
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  background-color: var(--primary);
+}
+
+.cardImage {
+  height: 90%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact section */
+.contact-title h2, .section-description {
+  margin: 0;
+}
+
+.section-description {
+  font-size: 1.1rem;
+}
+
+#contact {
+  margin-top: 75px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.contact-links {
+  background-color: var(--primary-dk);
+  width: 30%;
+  height: 170px;
+  border-radius: 7px;
+  padding-left: 5px;
+  font-size: 1.25rem;
+}
+
+.contact-links a, .icon, .footer-icon {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.contact-links a {
+  position: relative;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* .contact-links a:hover {
+  
+} 
+*/
+
+.contact-links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.contact-links a:hover::before {
+  transform: scaleX(1);
+}
+
+/* .contact-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+} */
+
+/* #contact form {
+  max-width: 350px;
+  margin: 0 auto;
+} */
+
+.contact-form {
+  width: 40%;
+}
+
+#contact form div {
+  margin-bottom: 20px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea,
+#contact form input[type="send"] {
+    box-sizing: border-box;
+    font-family: 'Louis-George-Cafe';
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 10px;
+    /* border: 2px solid #b8a487;  */
+    border: none;
+    border-radius: 7px;
+    transition: border-color 0.3s ease;
+    outline: none;
+    background-color: var(--primary-dk);
+    height: 50px;
+}
+
+#contact form textarea {
+  height: 150px; /* Adjust as needed */
+  resize: none;
+  border-radius: 7px;
+}
+
+#contact form input[type="text"]:focus,
+#contact form input[type="email"]:focus,
+#contact form textarea:focus {
+    border: 2px solid var(--secondary);
+}
+
+input[type="submit"] {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--accent-lt);
+}
+
+footer {
+  background-color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+}

@@ -3,164 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <title>Natalie Hoang</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="mediaqueries.css">
-  <link rel="icon" href="assets/images/MyFavicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/mediaqueries.css">
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
+  <!-- Navigation Bar -->
   <header>
-    <nav id="navbar">
-      <div class="logo">N@</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <!-- <li>
-          <a href="friends.html">
-            <i class="fa-solid fa-face-smile"></i>
-          </a>
-        </li> -->
-      </ul>
-    </nav>
-    <nav id="mobile-nav">
-      <div class="logo">N@</div>
-      <div class="mobile-menu">
-        <div class="mobile-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <script src="script.js"></script>
-  </header>
-  <div class="main-content">
-    <section id="home" class="section-odd">
-      <div class="intro">
-        <p class="intro-text1">Hello, I'm</p>
-        <h1>Natalie Hoang</h1>
-        <p class="intro-text2">Student @ EMU.</p>
-        <button class="btn-resume" onclick="window.open('./assets/NH_resume_1.pdf')">Download CV</button> 
-      </div>
-    </section>
-
-    <section id="about" class="section-even">
-      <div class="about-me">
-        <!-- <p class="about-me-p">Get to Know More</p> -->
-        <h1 class="about-header">About Me</h1>
-      </div>
-
-      <div class="summary">
-        <h2>Get to know me</h2>
-        <p>I will graduate in December 2024 with a Bachelor of Science in Computer Science. I am passionate about building intuitive user interfaces.</p>
-      </div>
-      <div class="skills">
-        <h2>Skills</h2>
+    <nav class="nav">
+      <div class="nav-logo">N@</div>
+      <a class="nav-hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </a>
+      <div class="nav-menu">
         <ul>
-          <li>Java</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>React</li>
-          <li>Python</li>
-          <li>JavaScript</li>
-          
-          <!-- Add more skills as needed -->
+          <li class="nav-menu-link"><a href="#home">Home</a></li>
+          <!-- <li class="nav-menu-link"><a href="#about">About</a></li> -->
+          <li class="nav-menu-link"><a href="#projects">Projects</a></li>
+          <li class="nav-menu-link"><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </section>
-
-    <section id="projects" class="section-odd">
-      <h2 class="projects-header">Projects + Fun</h2>
-      <div class="project">
-        <img src="assets/images/ript_screens.png" alt="Ript Fitness">
-        <h3>Ript Fitness</h3>
-        <p>A fitness mobile application that offers a way to track workouts, connect with friends, and log meals.</p>
-        <div class="proj-btns">
-          <div class="two-btns">
-            <a class="learn-btn" href="exp://u.expo.dev/ea20e0cb-de85-4497-8c69-2a529bb4a3a4/group/15ab57b4-690a-43cc-9529-729a1e999870" target="_blank">Expo Go</a>
-          </div>
-          <div class="two-btns">
-            <a class="github-btn" href="https://github.com/COSC481W-2024Fall/Ript-Fitness" target="_blank">GitHub</a>
-          </div>
+    </nav>
+  </header>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="intro">
+      <p class="intro-text1">Hi! I'm</p>
+      <h1>Natalie Hoang.</h1>
+      <p class="intro-text2">Recent computer science graduate. I specialize in frontend development and love creating user-friendly interfaces that make an impact.</p>
+      <button onclick="window.open('assets/NH_resume_3.pdf')">Download CV</button>
+    </div>
+    <img src="/assets/images/natalie1.jpg" alt="Natalie">
+  </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div id="project-cards"></div> <!-- js is creating the cards -->
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-title">
+        <h2>Contact</h2>
+        <p class="section-description">Please contact me via email or send me a message.</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-links">
+          <p><i data-feather="mail" fill="#BED8B5" stroke="#9CBC90" class="icon"></i><a href="mailto:hoangtnatalie@gmail.com">hoangtnatalie@gmail.com</a></p>
+          <p><i data-feather="github" fill="#BED8B5" stroke="#9CBC90" class="icon"></i><a href="https://github.com/hoangnatalie" target="_blank">GitHub</a></p>
+          <p><i data-feather="linkedin" fill="#BED8B5" stroke="#9CBC90" class="icon"></i><a href="https://www.linkedin.com/in/hoang-natalie" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="post">
+            <div>
+              <input type="hidden" name="access_key" value="129933d1-fdb7-40c5-a85a-e9a05d40c093">
+              <input type="text" id="name" name="name" placeholder="Name" class="contacts-input" required>
+            </div>
+            <div>
+              <input type="email" id="email" name="email" placeholder="Email" class="contacts-input" required>
+            </div>
+            <div>
+              <textarea name="message" id="message" rows="4" placeholder="Message" class="contacts-input" required></textarea>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Submit" class>
+          </form>
         </div>
       </div>
-      <div class="project">
-        <img src="assets/images/remarket-sc1.png" alt="ReMarket">
-        <h3>ReMarket</h3>
-        <p>An online marketplace that allows users to buy & sell products.</p>
-        <div class="proj-btns">
-          <div class="two-btns">
-            <a class="learn-btn" href="https://phi1ls.github.io/ReMarket-471-Project/" target="_blank">View More</a>
-          </div>
-          <div class="two-btns">
-            <a class="github-btn" href="https://github.com/Phi1lS/ReMarket-471-Project" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="assets/images/TowerOfZeru.png" alt="Project 2">
-        <h3>Tower of Zeru</h3>
-        <p>A 2D roguelite dungeon crawler game.</p>
-        <div class="proj-btns">
-          <div class="two-btns">
-            <a class="learn-btn" href="https://youtu.be/99QisaAzqo4" target="_blank">Trailer</a>
-          </div>
-          <div class="two-btns">
-            <a class="github-btn" href="https://github.com/TFlinchu/Tower-of-Zeru" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="assets/images/postcard.jpg" alt="Postcard">
-        <h3>Illustrations</h3>
-        <p>Sometimes I like to be creative using Adobe.</p>
-        <!-- <a class="learn-btn" href="#">More Soon</a> -->
-      </div>
-      
-      <!-- Repeat similar structure for other projects -->
-    </section>
-
-    <section id="contact" class="section-even">
-        <h1>Get in Touch</h1>
-        <h2>Contact Me</h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <div>
-            <input type="hidden" name="access_key" value="129933d1-fdb7-40c5-a85a-e9a05d40c093">
-            <!-- <label for="name">Name:</label> -->
-            <input type="text" id="name" name="name" placeholder="Name" class="contact-inputs" required>
-          </div>
-          <div>
-            <!-- <label for="email">Email:</label> -->
-            <input type="email" id="email" name="email" placeholder="Email" class="contact-inputs" required>
-          </div>
-          <div>
-            <!-- <label for="message">Message:</label> -->
-            <textarea id="message" name="message" rows="4" placeholder="Message" class="contact-inputs" required></textarea>
-          </div>
-          <button class="send-btn" type="submit">Send</button>
-        </form>
-      </section>
-      
-  </div>
-
-  <footer class="footer">
-    <ul class="social-links">
-      <a href="https://github.com/hoangnatalie" target="_blank"> <img class="footer-icon" src="assets/images/github_icon2.png" alt="Github Icon"></a>
-      <a href="https://www.linkedin.com/in/hoang-natalie" target="_blank"> <img class="footer-icon" src="assets/images/linkedin_icon.png" alt="Linkedin Icon"></a>
-      <a href="https://www.instagram.com/_nataliehoang/" target="_blank"> <img class="footer-icon" src="assets/images/instagram_icon.png" alt="Instagram Icon"></a> 
-      <!-- Add more social links/icons as needed -->
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <ul>
+      <a href="mailto:hoangtnatalie@gmail.com" target="_blank" class="footer-link"> <i data-feather="mail" fill="#BED8B5" stroke="#786658" class="footer-icon"></i> </a>
+      <a href="https://github.com/hoangnatalie" target="_blank" class="footer-link"> <i data-feather="github" fill="#BED8B5" stroke="#786658" class="footer-icon"> </i></a>
+      <a href="https://www.linkedin.com/in/hoang-natalie" target="_blank" class="footer-link"> <i data-feather="linkedin" fill="#BED8B5" stroke="#786658" class="footer-icon"> </i></a>
     </ul>
   </footer>
+  <script src="scripts/script.js"></script>
+  <!-- <script>
+    feather.replace({
+      stroke: "#BED8B5",
+      width: 30,
+      height: 30
+    });
+  </script> -->
 </body>
 </html>

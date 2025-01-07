@@ -156,6 +156,28 @@
 
   button {
     font-size: medium;
-   }
+  }
+
+  footer {
+    width: 90%;
+    border-radius: 15px;
+  }
+
+  footer a {
+    font-size: 1rem;
+  }
+
+  .screenshots {
+    margin-top: 15px;
+  }
+
+  .screenshots img {
+    width: 25%;
+  }
+
+  .next-steps-container button {
+    margin-bottom: 20px;
+  }
+
 
 }

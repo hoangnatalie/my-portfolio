@@ -63,10 +63,10 @@ const cards = [
   {
     title: "ReMarket",
     description: "An online marketplace that allows users to create accounts, shop for a variety of products, and sell their own items with ease.",
-    techStack: ["HTML", "CSS", "PHP"],
+    techStack: ["HTML", "Tailwind", "PHP"],
     image: "assets/images/remarket-sc1.png",
-    github: "https://phi1ls.github.io/ReMarket-471-Project/",
-    demo: "https://github.com/Phi1lS/ReMarket-471-Project"
+    github: "https://github.com/Phi1lS/ReMarket-471-Project",
+    demo: "https://phi1ls.github.io/ReMarket-471-Project/"
   },
   {
     title: "Tower of Zeru",

@@ -108,8 +108,23 @@ hr {
   font-size: 1.75rem;
 }
 
-#overview img {
+#overview img, .screenshots img {
   width: 250px;
+}
+
+.before-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.prototype-button {
+  align-self: center;
+}
+
+.screenshots {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
 }
 
 /* Design Section */
@@ -120,7 +135,7 @@ hr {
   margin: 0 auto;
 }
 
-.design-container img {
+.design-container img, .screenshots img {
   border: 2px solid var(--secondary);
   border-radius: 10px;
 }
@@ -151,7 +166,11 @@ hr {
 .design-container p {
   margin-top: 0;
   font-size: 1.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.design-container button {
+  margin-bottom: 30px;
 }
 
 .wireframe-desc-container {
@@ -312,6 +331,7 @@ button:hover {
 footer a {
   color: var(--secondary);
   margin-right: 10px;
+  font-size: 1.25rem;
 }
 
 footer a:hover {
